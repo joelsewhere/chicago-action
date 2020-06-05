@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - CA</title>
+    {% else %}
+    <title>Chicago Action!</title>
+    {% endif %}
+    <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  </head>
+  <body>
+    <div>
+      <div class="text-center">Chicago Action!</div></div>
+    <hr />
+    {% block content %}{% endblock %}
+  </body>
+</html>

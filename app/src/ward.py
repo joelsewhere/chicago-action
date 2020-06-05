@@ -6,7 +6,7 @@ geolocator = Nominatim(user_agent="Chicago Action")
 
 
 
-def find_ward(address):
+def address_search(address):
     try:
         location = geolocator.geocode(address)
     except: 
